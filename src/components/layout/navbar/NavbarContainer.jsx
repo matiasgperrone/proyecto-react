@@ -1,4 +1,4 @@
-import Navbar from "./navBar";
+import Navbar from "./Navbar";
 
 const NavbarContainer = () => {
   return <Navbar />;

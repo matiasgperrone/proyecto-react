@@ -1,6 +1,6 @@
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
-import CartContainer from "../cart/cartContainer";
+import CartContainer from "../cart/CartContainer";
 import HubIcon from "@mui/icons-material/Hub";
 import "./Navbar.css";
 
