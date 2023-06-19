@@ -1,9 +1,16 @@
-
+import "./Index.css";
+import FooterContainer from "./components/layout/footer/footerContainer";
+import NavbarContainer from "./components/layout/navbar/NavbarContainer";
+import ItemListContainer from "./components/pages/itemList/ItemListContainer";
 
 function App() {
-  
-  return <h1>HOLA MUNDO EN REACT!</h1>
-
+  return (
+    <div>
+      <NavbarContainer />
+      <ItemListContainer />
+      <FooterContainer />
+    </div>
+  );
 }
 
-export default App
+export default App;
