@@ -1,5 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital@1&display=swap");
+
+.logo {
+  font-family: rubik !important;
+  text-transform: none !important;
+  font-size: 18px !important;
+  border: none !important;
+  color: #00adb5 !important;
+}
+
 .navbar-button {
-  background-color: #393e46 !important;
+  background-color: #222831 !important;
   border-color: #00adb5 !important;
   color: #00adb5 !important;
 }

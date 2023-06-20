@@ -1,0 +1,13 @@
+.footer-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background-color: #222831;
+  height: 80px;
+}
+
+.footer-button {
+  border: none;
+  background-color: transparent;
+  color: white;
+}

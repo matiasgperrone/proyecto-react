@@ -1,16 +1,15 @@
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import CartContainer from "../cart/CartContainer";
-import HubIcon from "@mui/icons-material/Hub";
 import "./Navbar.css";
 
 const Navbar = () => {
   return (
     <Box
       sx={{
-        padding: "0px 20px",
+        paddingRight: "20px",
         height: "60px",
-        backgroundColor: "#393E46",
+        backgroundColor: "#222831",
         display: "flex",
         alignItems: "center",
       }}
@@ -25,7 +24,9 @@ const Navbar = () => {
         }}
       >
         <li>
-          <HubIcon />
+          <Button variant="outlined" className="logo">
+            MyTechnology
+          </Button>
         </li>
         <li>
           <Button variant="outlined" className="navbar-button">
