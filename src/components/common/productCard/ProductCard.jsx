@@ -1,7 +1,6 @@
-import { Widgets } from "@mui/icons-material";
-import React from "react";
-import css from "./ProductCard.css";
+import "./ProductCard.css";
 import { Button } from "@mui/material";
+import { Link } from "react-router-dom";
 
 const ProductCard = ({ item }) => {
   return (
@@ -11,7 +10,9 @@ const ProductCard = ({ item }) => {
       </div>
       <h1 style={{ textAlign: "center" }}>{item.title}</h1>
       <h2 style={{ textAlign: "center" }}>${item.price}</h2>
-      <Button>Ver producto</Button>
+      <Link to={`/itemDetail/${item.id}`}>
+        <Button>Ver producto</Button>
+      </Link>
     </div>
   );
 };

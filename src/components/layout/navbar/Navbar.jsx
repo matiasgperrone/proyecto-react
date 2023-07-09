@@ -1,7 +1,8 @@
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
-import CartContainer from "../cart/CartContainer";
+import CartWidgetContainer from "../cartWidget/CartWidgetContainer";
 import "./Navbar.css";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -24,31 +25,41 @@ const Navbar = () => {
         }}
       >
         <li>
-          <Button variant="outlined" className="logo">
-            MyTechnology
-          </Button>
+          <Link to={"/"}>
+            <Button variant="outlined" className="logo">
+              MyTechnology
+            </Button>
+          </Link>
         </li>
         <li>
-          <Button variant="outlined" className="navbar-button">
-            Inicio
-          </Button>
+          <Link to={"/"}>
+            <Button variant="outlined" className="navbar-button">
+              Todos los productos
+            </Button>
+          </Link>
         </li>
         <li>
-          <Button variant="outlined" className="navbar-button">
-            Productos
-          </Button>
+          <Link to={"/category/celulares"}>
+            <Button variant="outlined" className="navbar-button">
+              Celulares
+            </Button>
+          </Link>
         </li>
         <li>
-          <Button variant="outlined" className="navbar-button">
-            Sobre nosotros
-          </Button>
+          <Link to={"/category/notebooks"}>
+            <Button variant="outlined" className="navbar-button">
+              Notebooks
+            </Button>
+          </Link>
         </li>
         <li>
-          <Button variant="outlined" className="navbar-button">
-            Contacto
-          </Button>
+          <Link to={"/category/televisores"}>
+            <Button variant="outlined" className="navbar-button">
+              Televisores
+            </Button>
+          </Link>
         </li>
-        <CartContainer />
+        <CartWidgetContainer />
       </ul>
     </Box>
   );

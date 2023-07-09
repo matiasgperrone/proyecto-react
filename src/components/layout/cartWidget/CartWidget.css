@@ -1,0 +1,12 @@
+.cart-div {
+  display: flex;
+  align-items: center;
+}
+
+.cart {
+  color: #eeeeee !important;
+}
+
+.css-106c1u2-MuiBadge-badge {
+  background-color: #00adb5 !important;
+}
