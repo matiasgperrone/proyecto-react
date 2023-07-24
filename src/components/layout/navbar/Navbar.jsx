@@ -59,7 +59,9 @@ const Navbar = () => {
             </Button>
           </Link>
         </li>
-        <CartWidgetContainer />
+        <li>
+          <CartWidgetContainer />
+        </li>
       </ul>
     </Box>
   );

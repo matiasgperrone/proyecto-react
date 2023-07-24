@@ -5,7 +5,6 @@ const NavbarContainer = () => {
   return (
     <div>
       <Navbar />
-      <Outlet />
     </div>
   );
 };

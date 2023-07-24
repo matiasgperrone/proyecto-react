@@ -4,27 +4,26 @@ import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import "./footer.css";
-import { Box } from "@mui/material";
-import { blue, red } from "@mui/material/colors";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
     <div className="footer-container">
-      <button className="footer-button">
+      <Link className="footer-button">
         <TwitterIcon />
-      </button>
-      <button className="footer-button">
+      </Link>
+      <Link className="footer-button">
         <FacebookIcon />
-      </button>
-      <button className="footer-button">
+      </Link>
+      <Link className="footer-button">
         <WhatsAppIcon />
-      </button>
-      <button className="footer-button">
+      </Link>
+      <Link className="footer-button">
         <InstagramIcon />
-      </button>
-      <button className="footer-button">
+      </Link>
+      <Link className="footer-button">
         <LinkedInIcon />
-      </button>
+      </Link>
     </div>
   );
 };
