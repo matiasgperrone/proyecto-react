@@ -8,7 +8,8 @@ const ItemDetailContainer = () => {
   const [product, setProduct] = useState({});
 
   let { id } = useParams();
-  const { addToCart } = useContext(CartContext);
+  const { addToCart, getQuantityById } = useContext(CartContext);
+  let cantidadEnCarrito = getQuantityById(id);
 
   useEffect(() => {
     let promesa = new Promise((resolve, rejected) => {
@@ -27,7 +28,13 @@ const ItemDetailContainer = () => {
     addToCart(data);
   };
 
-  return <ItemDetail product={product} agregarAlCarrito={agregarAlCarrito} />;
+  return (
+    <ItemDetail
+      cantidadEnCarrito={cantidadEnCarrito}
+      product={product}
+      agregarAlCarrito={agregarAlCarrito}
+    />
+  );
 };
 
 export default ItemDetailContainer;
