@@ -1,8 +1,8 @@
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import CartWidgetContainer from "../cartWidget/CartWidgetContainer";
-import "./Navbar.css";
 import { Link } from "react-router-dom";
+import "./Navbar.css";
 
 const Navbar = () => {
   return (
@@ -26,9 +26,7 @@ const Navbar = () => {
       >
         <li>
           <Link to={"/"}>
-            <Button variant="outlined" className="logo">
-              MyTechnology
-            </Button>
+            <Button variant="outlined">MyTechnology</Button>
           </Link>
         </li>
         <li>

@@ -3,6 +3,9 @@ import ItemDetail from "./ItemDetail";
 import { products } from "../../../productsMock";
 import { useParams } from "react-router-dom";
 import { CartContext } from "../../../context/CartContext";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import "../../../index.css";
 
 const ItemDetailContainer = () => {
   const [product, setProduct] = useState({});
@@ -26,14 +29,27 @@ const ItemDetailContainer = () => {
       quantity: cantidad,
     };
     addToCart(data);
+    toast.success("Producto agregado al carrito", {
+      position: "top-right",
+      autoClose: 4000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "dark",
+    });
   };
 
   return (
-    <ItemDetail
-      cantidadEnCarrito={cantidadEnCarrito}
-      product={product}
-      agregarAlCarrito={agregarAlCarrito}
-    />
+    <>
+      <ItemDetail
+        cantidadEnCarrito={cantidadEnCarrito}
+        product={product}
+        agregarAlCarrito={agregarAlCarrito}
+      />
+      <ToastContainer />
+    </>
   );
 };
 

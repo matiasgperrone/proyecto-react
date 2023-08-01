@@ -1,11 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital@1&display=swap");
 
-.logo {
+/* .logo {
   font-family: rubik !important;
   text-transform: none !important;
   font-size: 18px !important;
   border: none !important;
   color: #00adb5 !important;
+} */
+
+.css-1rwt2y5-MuiButtonBase-root-MuiButton-root,
+.logo {
+  font-family: rubik;
+  text-transform: none;
+  font-size: 18px;
+  border: none;
+  color: #00adb5;
 }
 
 .navbar-button {

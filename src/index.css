@@ -20,3 +20,30 @@ h6,
 input {
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* TOASTIFY STYLES */
+
+:root {
+  --toastify-icon-color-success: #00adb5;
+}
+.Toastify__progress-bar--success {
+  background: #00adb5;
+}
+
+/* SWAL STYLES */
+
+div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {
+  background-color: #00adb5;
+}
+
+div:where(.swal2-icon).swal2-success {
+  color: #00adb5;
+}
+
+div:where(.swal2-icon).swal2-success [class^="swal2-success-line"] {
+  background-color: #00adb5;
+}
+
+div:where(.swal2-icon).swal2-success {
+  border-color: #00adb5;
+}
