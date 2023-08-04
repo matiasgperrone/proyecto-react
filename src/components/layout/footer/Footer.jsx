@@ -5,6 +5,7 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import "./footer.css";
 import { Link } from "react-router-dom";
+import { Button } from "@mui/material";
 
 const Footer = () => {
   return (
@@ -23,6 +24,9 @@ const Footer = () => {
       </Link>
       <Link className="footer-button">
         <LinkedInIcon />
+      </Link>
+      <Link to="/Dashboard">
+        <Button>ADMIN</Button>
       </Link>
     </div>
   );

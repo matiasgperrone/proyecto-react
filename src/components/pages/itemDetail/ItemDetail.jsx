@@ -1,4 +1,5 @@
 import CounterContainer from "../../common/counter/CounterContainer";
+import css from "./itemDetail.css";
 
 const ItemDetail = ({
   product,
@@ -7,15 +8,18 @@ const ItemDetail = ({
   cantidadEnCarrito,
 }) => {
   return (
-    <div>
-      <h1>{product.title}</h1>
-      <h2>{product.price}</h2>
-
-      <CounterContainer
-        cantidadEnCarrito={cantidadEnCarrito}
-        agregarAlCarrito={agregarAlCarrito}
-        stock={product.stock}
-      />
+    <div className="itemDetailContainer">
+      <img src={product.img} style={{ width: "400px" }} />
+      <div className="itemDetailInfo">
+        <h3>{product.title}</h3>
+        <p>Precio: ${product.price}</p>
+        <p>{product.description}</p>
+        <CounterContainer
+          cantidadEnCarrito={cantidadEnCarrito}
+          agregarAlCarrito={agregarAlCarrito}
+          stock={product.stock}
+        />
+      </div>
     </div>
   );
 };

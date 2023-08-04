@@ -8,8 +8,8 @@ const ProductCard = ({ item }) => {
       <div className="img-container">
         <img className="card-img" src={item.img} alt="" />
       </div>
-      <h1 style={{ textAlign: "center" }}>{item.title}</h1>
-      <h2 style={{ textAlign: "center" }}>${item.price}</h2>
+      <h3 style={{ textAlign: "center" }}>{item.title}</h3>
+      <p style={{ textAlign: "center" }}>${item.price}</p>
       <Link to={`/itemDetail/${item.id}`}>
         <Button>Ver producto</Button>
       </Link>
