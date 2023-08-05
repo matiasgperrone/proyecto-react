@@ -26,7 +26,9 @@ const Navbar = () => {
       >
         <li>
           <Link to={"/"}>
-            <Button variant="outlined">MyTechnology</Button>
+            <Button variant="outlined" className="logo">
+              MyTechnology
+            </Button>
           </Link>
         </li>
         <li>
